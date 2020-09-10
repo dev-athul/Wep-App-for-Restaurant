@@ -116,14 +116,93 @@
 						<div class="col-12 col-md-6">
 							<img src="img/logo.png" class="img-fluid" alt="Logo" />
 						</div>
-						<div class="col-12 col-md-6 align-self-center">
-							<a href="#reserve-table" class="btn btn-warning btn-block nav-link" role="button" data-toggle="tooltip" data-html="true" title="Or Call us at <br> <strong>+8848654321 </strong>" data-placement="bottom">Reserve Table</a>
-						</div>
+						<div class="col-12 col-sm-3 col-align-self-right ">
+							<a type="button" data-toggle="modal" data-target="#formReserve" class="btn btn-warning">
+							  Reserve Table</a>
+						  </div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+
+	<div class="modal fade" role="dialog" id="formReserve">
+		<div class="modal-dialog modal-lg" role="content">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h4 class="modal-title">Reserve a Table</h4>
+			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+			  <form>
+				<div class="form-group row">
+	
+				  <label for="" class="col-12 col-sm-2 col-form-label">Number of Guests</label>
+				  <div class="col-12 col-sm-8">
+					<div class="form-check-inline">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optradio">1
+					  </label>
+					</div>
+					<div class="form-check-inline">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optradio">2
+					  </label>
+					</div>
+					<div class="form-check-inline">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optradio">3
+					  </label>
+					</div>
+					<div class="form-check-inline">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optradio">4
+					  </label>
+					</div>
+					<div class="form-check-inline">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optradio">5
+					  </label>
+					</div>
+					<div class="form-check-inline">
+					  <label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optradio">6
+					  </label>
+					</div>
+				  </div>
+				</div>
+				<div class="form-group row">
+				  <label for="" class="col-12 col-sm-2 col-form-label">Section</label>
+				  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+					<label class="btn btn-success">
+					  <input type="radio" name="options" id="option1" autocomplete="off" checked> Non Smoking
+					</label>
+					<label class="btn btn-danger">
+					  <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+					</label>
+				  </div>
+				</div>
+				<div class="form-group row">
+				  <label for="datetime" class="col-12 col-sm-2 col-form-label">Date and Time</label>
+				  <div class="col-12 col-sm-4">
+					<input type="text" class="form-control" id="datetime" name="datetime" placeholder="Date">
+				  </div>
+				  <div class="col-12 col-sm-4">
+					<input type="text" class="form-control" id="datetime" name="datetime" placeholder="Time">
+				  </div>
+				</div>
+				<div class="form-group row">
+				  <div class="offset-sm-2 col-sm-10">
+					
+					<button type="button" class="btn btn-dark" data-dismiss="modal">Cancel</button>
+					<button type="submit" class="btn btn-primary">Reserve</button>
+				  </div>
+				</div>
+			  </form>
+			</div>
+		  </div>
+		</div>
+	  </div>
 
 	<div class="container">
 
@@ -253,64 +332,7 @@
 			</div>
 		</div>
 
-		<div class="row row-content align-items-center justify-content-center" id="reserve-table">
-			<div class="card">
-				<h3 class="card-header bg-warning text-white">Reserve A Table</h3>
-				<div class="card-body">
-					<form action="">
-						<div class="form-group row">
-							<label for="guestcount" class="col-12 col-md-2 col-form-label">Number of Guests</label>
-							<div class="col-12 col-md-10">
-								<div class="form-check-inline">
-									<label class="form-check-label">
-										<input type="radio" class="form-check-input" name="optradio" />1
-									</label>
-								</div>
-								<div class="form-check-inline">
-									<label class="form-check-label">
-										<input type="radio" class="form-check-input" name="optradio" />2
-									</label>
-								</div>
-								<div class="form-check-inline">
-									<label class="form-check-label">
-										<input type="radio" class="form-check-input" name="optradio" />3
-									</label>
-								</div>
-								<div class="form-check-inline">
-									<label class="form-check-label">
-										<input type="radio" class="form-check-input" name="optradio" />4
-									</label>
-								</div>
-								<div class="form-check-inline">
-									<label class="form-check-label">
-										<input type="radio" class="form-check-input" name="optradio" />5
-									</label>
-								</div>
-								<div class="form-check-inline">
-									<label class="form-check-label">
-										<input type="radio" class="form-check-input" name="optradio" />6
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="form-group row">
-							<label for="datentime" class="col-12 col-md-2 col-form-label">Date and Time</label>
-							<div class="col-12 col-md-5">
-								<input type="test" class="form-control" id="date" name="date" placeholder="Date" />
-							</div>
-							<div class="col-12 col-md-5">
-								<input type="text" class="form-control" id="time" name="time" placeholder="Time" />
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="offset-md-2 col-md-10">
-								<button type="submit" class="btn btn-primary">Reserve</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
+		
 	</div>
 
 	<footer class="footer">
